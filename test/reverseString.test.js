@@ -1,20 +1,20 @@
 const reverseString = require('../src/reverseString')
 
 it('reversed', () => {
-    expect('test').toBe('tset')
-    expect('something').toBe('gnihtemos')
+    expect(reverseString('test')).toBe('tset')
+    expect(reverseString('something')).toBe('gnihtemos')
 })
 
 it('empty string', () => {
-    expect('').toBe('')
+    expect(reverseString('')).toBe('')
 })
 
 it('space', () => {
-    expect(' ').toBe('')
-    expect('   ').toBe('')
+    expect(reverseString(' ')).toBe('')
+    expect(reverseString('   ')).toBe('')
 })
 
 it('string surrounded by spaces', () => {
-    expect(' test ').toBe("tset")
-    expect ('   t ').toBe("t")
+    expect(reverseString(' test ')).toBe("tset")
+    expect (reverseString('   t ')).toBe("t")
 })
