@@ -10,8 +10,8 @@ it('empty string', () => {
 })
 
 it('space', () => {
-    expect(' ').toBe(' ')
-    expect('   ').toBe('   ')
+    expect(' ').toBe('')
+    expect('   ').toBe('')
 })
 
 it('string surrounded by spaces', () => {
